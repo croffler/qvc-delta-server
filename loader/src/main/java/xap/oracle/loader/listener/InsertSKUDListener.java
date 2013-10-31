@@ -1,0 +1,29 @@
+package xap.oracle.loader.listener;
+
+import org.openspaces.events.EventTemplate;
+import org.openspaces.events.adapter.SpaceDataEvent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import xap.oracle.skud.entity.SKUD;
+
+public class InsertSKUDListener {
+
+	static Logger logger = LoggerFactory.getLogger(InsertSKUDListener.class);
+
+	@EventTemplate
+	public SKUD unprocessedData() {
+		SKUD template = new SKUD();
+		return template;
+	}
+
+	@SpaceDataEvent
+	public SKUD eventListener(SKUD event) {
+
+		if (logger.isDebugEnabled())
+			logger.debug("An SKUD was inserted in the space");
+
+		return null;
+	}
+
+}
