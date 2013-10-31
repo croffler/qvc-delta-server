@@ -14,48 +14,35 @@ public class DBTest {
 
 		SKUDDAO service = context.getBean(SKUDDAO.class);
 
-		int timer = 3000;
+ 
 
 		SKUD skud = new SKUD();
 
-//		for (int i = 0; i < 10; i++) {
+		// for (int i = 0; i < 10; i++) {
 
-			skud.setSknNbr("00001");
-			
-//			emp.setAge(10);
-//			emp.setFistName("John");
-//			emp.setLastName("Dow" + i);
-//			emp.setId(new Long(i));
-//			emp.setProcessed(Boolean.FALSE);
-//			emp.setDepartmentId(i % 5);
+		skud.setSknNbr("00001");
 
-			System.out.println("Creating an Employee");
-			service.create(skud);
-	//		Thread.sleep(timer);
+		System.out.println("Creating an SKUD");
+		service.create(skud);
+		// Thread.sleep(timer);
 
-//		}
+		// }
 
-//		for (int i = 0; i < 10; i++) {
-//			emp.setAge(22);
-//			emp.setFistName("Fritz");
-//			emp.setLastName("Shultz" + i);
-//			emp.setId(new Long(i));
-//			emp.setProcessed(Boolean.TRUE);
-//			emp.setDepartmentId(i % 5);
+		// for (int i = 0; i < 10; i++) {
 
-//			System.out.println("Updating an Employee");
-//			service.update(skud);
-//			Thread.sleep(timer);
+		// System.out.println("Updating an SKUD");
+		// service.update(skud);
+		// Thread.sleep(timer);
 
-//		}
+		// }
 
-//		for (int i = 0; i < 10; i++) {
-//		//	emp.setId(new Long(i));
-//
-//			System.out.println("Deleting an Employee");
-//			service.remove(skud);
-//			Thread.sleep(timer);
-//		}
+		// for (int i = 0; i < 10; i++) {
+
+		//
+		// System.out.println("Deleting an SKUD");
+		// service.remove(skud);
+		// Thread.sleep(timer);
+		// }
 	}
 
 }
