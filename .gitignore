@@ -5,6 +5,8 @@
 *.war
 *.ear
 
+*.csv
+
 
 # OS generated files #
 ######################
